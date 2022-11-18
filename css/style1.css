@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    color: white;
+   background: transparent;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.logo{
+    width: 140px;
+    height: 140px;
+    padding: 0 8px;
+    background: transparent;
+    border-radius: 60%;
+
+}
+.content{
+    left: 2%;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50px);
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.collegecontent{
+    position: absolute;
+    left: 10%;
+    top: 1%;
+    text-align: center;
+    padding: 7px;
+    
+}
+.collegecontent h1{
+    color: #dc3535;
+    word-spacing: 10px;
+}
+.collegecontent h2{
+    color: #31087b;
+    word-spacing: 10px;
+    padding: 5px;
+}
+.collegecontent h3{
+    color: #ccff33;
+    word-spacing: 5px;
+    padding: 5px;
+}
+.content h1{
+    padding: 10px;
+    font-size: 64px;
+    font-weight:600;
+    font-family:'Times New Roman', Times, serif;
+}
+.content p{
+    font-size: 30px;
+    font-weight:600;
+    font-family:'Times New Roman', Times, serif;
+}
+.content h1 span{
+    color: #ff3753;
+}
+body{
+    background-color: #000;
+}
+.launch-time{
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    width: 450px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.launch-time::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 640px;
+    background: #ccff33;
+    animation: animate 3s linear infinite;
+}
+.launch-time::after{
+    content: '';
+    position: absolute;
+    background: #000;
+    border-radius: 16px;
+    inset: 4px;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(350deg);
+    }
+}
+@media  (max-width: 400px)  {
+    .launch-time {
+        position: absolute;
+        left: 27px;
+        top: 158px;
+        width: 300px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+}
+.launch-time .box{
+    display: flex;
+    background: transparent;
+    width: 400px;
+    height: 100px;
+    color: #fff;
+    z-index: 10;
+    border-radius: 20px;
+}
+.launch-time div{
+    color: #fff;
+    flex-basis: 100px;
+}
+.launch-time div #days {
+    position: absolute;
+    left: 55px;
+}
+.launch-time div #hours{
+    position: absolute;
+    left: 155px;
+}
+.launch-time div #minutes{
+    position: absolute;
+    left: 255px;
+}
+.launch-time div #seconds{
+    position: absolute;
+    left: 355px;
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: -5px; 
+}
+.launch-time .box div span {
+    position: absolute;
+    top: 80px;
+    font-size: 20px;
+    z-index: 10;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+.launch-time .box div span #dis1 {
+position: relative;
+margin-left: 10px;
+}
+.more{
+    position: absolute;
+    color: #00ffff;
+    top: 260px;
+    left: 70px;
+   
+}
+.button{
+    font-family: 'Times New Roman', Times, serif;
+}
+.ieeelogo{
+    position: absolute;
+    display: flex;
+    top: 7%;
+    left: 57%;
+}
+.ieeelogo img{
+    width: 150px;
+    height: 50px;
+}
+.eventbox{
+    position: absolute;
+    left: 57%;
+    top: 40%;
+    display: flex;
+    font-family:'Times New Roman', Times, serif;
+}
+.card1{
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    overflow: hidden;
+    border: 2px solid;
+    background-color: #000;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.card1:hover{
+    transform: translateY(-20px);
+}
+.card2:hover{
+    transform: translateY(-20px);
+}
+.card2{
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    left: 120%;
+    background-color: #000;
+    overflow: hidden;
+    border: 2px solid;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.4s;
+}
+.events{
+    padding: 20px;
+    outline: none;
+}
+.events li{
+
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    list-style: none;    
+}
+.card1  h1{
+    background-color: #00ffff;
+    color: #000;
+    font-family: cursive;
+    text-align: left;
+    border-radius: 0px 0px 20px;
+    font-size: 20px;
+    padding: 10px;
+    width: 120px;
+    }
+.card1 button{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    border-radius: 0px  30px;
+    background-color: #00ffff;
+    color: #000;
+    border: none;
+    font-size: large;
+    font-family:cursive;
+    cursor: pointer;
+    bottom: 15px;
+    left: 9%;
+}
+.card2 button{
+    width: 200px;
+    position: absolute;
+    height: 40px;
+    position: absolute;
+    border-radius: 0px  30px;
+    background-color: #00ffff;
+    color: #000;
+    border: none;
+    font-size: large;
+    font-family:cursive;
+    cursor: pointer;
+    bottom: 15px;
+    right: 9%;
+}
+.card2  h1{
+    background-color: #00ffff;
+    color: #000;
+    font-family: cursive;
+    border-radius: 0px 0px 20px;
+    font-size: 20px;
+    padding: 10px;
+    width: 160px;
+    }
+.content .more{
+        padding: 5px;
+        margin-top: 50px;
+        margin-left: 100px; 
+        position: absolute;
+        border: 2px solid #fff;
+        font-family: cursive;
+        width: 150px;
+        height: 50px;
+        transition: 0.4s;
+    }
+    
+.content .more:hover{
+    background-color: #00ffff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-size: 16px;
+    transform: translateY(-10px);
+}
+@media  (max-width: 400px)  {
+
+   .logo{
+    position: absolute;
+    left: px;
+    background: transparent;
+    top: 5px;
+    width: 100px;
+    height: 100px;
+   }
+   .collegecontent{
+    position:absolute;
+    left: 9%;
+    top: 1%;
+    background: transparent;
+    text-align: center;
+    padding: 7px;
+    
+}
+.collegecontent h1{
+     position: absolute;
+     width: 400px;
+     left: 25px;
+     background: transparent;
+    font-size: 16px;
+}
+.collegecontent h2{
+    font-size: 16px;
+    position: absolute;
+    width: 400px;
+    background: transparent;
+     left: 17px;
+     top: 29px;
+    word-spacing: 10px;
+    padding: 5px;
+}
+.collegecontent h3{
+    position: absolute;
+    word-spacing: 5px;
+    padding: 5px;
+    width: 400px;
+    top: 50px;
+    background: transparent;
+    left: 40px;
+    font-size: 16px;
+}
+.ieeelogo{
+    width: 400px;
+    position: absolute;
+    top: 140px;
+    left: -1px;
+}
+
+.ieeelogo .ieee{
+    width: 100px;
+    position: absolute;
+    left: 30px;
+}
+
+.ieeelogo .c1{
+    width: 130px;
+    position: absolute;
+   left: 180px;
+}
+
+.ieeelogo .ra{
+    width: 130px;
+    left: 350px;
+    position: absolute;
+}
+
+.content #dept{
+width: 400px;
+font-size: 20px;
+margin-left: 30px;
+}
+
+.content h1{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.launch-time div p{
+    font-size: 40px;
+    margin-bottom: 1px; 
+    margin-left: 20px;
+    margin-top: 35px;
+}
+
+.launch-time div span{
+    margin-left: 20px;
+}
+.eventbox{
+    display: flex;
+}
+.eventbox .card1{
+   position: absolute;
+   top: 330px;
+   width: 300px;
+   left: -150px;
+   
+}
+.eventbox .card2{
+    position: absolute;
+    top: 700px;
+    width: 300px;
+    left: -150px;
+    
+ }
+ .eventbox .card1 button{
+margin-left: 20px;
+ }
+ .eventbox .card2 button{
+    margin-right: 20px;
+     }
+.eventbox  h1{
+background-color: #00ffff;
+color: #000;
+font-family: cursive;
+border-radius: 20px;
+font-size: 25px;
+padding: 5px;
+}
+.card2 h1{
+    border-radius: 0px 0px 20px;
+    width: 220px;
+}
+.card1 h1{
+    border-radius: 0px 0px 20px;
+    width: 150px;
+}
+.content .more{
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 100px; 
+    position: absolute;
+    border: 2px solid #fff;
+    font-family: cursive;
+    width: 150px;
+    height: 50px;
+    transition: 0.4s;
+}
+
+.content .more:hover{
+background-color: #00ffff;
+color: #000;
+border: 1px solid #000;
+border-radius: 20px;
+font-size: 16px;
+transform: translateY(-10px);
+}
+}
