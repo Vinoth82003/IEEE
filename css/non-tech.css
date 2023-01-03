@@ -1,0 +1,264 @@
+.section4 .event-list {
+  position: absolute;
+  background: #000;
+  height: 100vh;
+  width: 200px;
+  left: -20px;
+  top: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section4 .event-shower {
+  position: absolute;
+  width: 70%;
+  height: 450px;
+  background: #dd4646;
+  left: 20%;
+  top: 110px;
+  overflow: hidden;
+  border: 4px solid;
+}
+
+.section4 .event-shower .rotate-menu {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  background: #47f104;
+  left: 97%;
+  top: 6%;
+  transition: 1s;
+  transform: rotate(45deg);
+}
+.section4 .event-shower .rotate-menu h5 {
+  font-size: 30px;
+  margin-left: 5%;
+  margin-top: 5%;
+  border-bottom: 2px solid;
+  width: 250px;
+}
+.section4 .line1 {
+  position: absolute;
+  width: 48px;
+  height: 450px;
+  background: #dd4646;
+  left: 273px;
+  top: 110px;
+  z-index: 1;
+}
+.section4 .line2 {
+  position: absolute;
+  width: 11px;
+  height: 452px;
+  background: #dd4646;
+  left: 1182px;
+  top: 112px;
+  z-index: 1;
+}
+.section4 .line3 {
+  position: absolute;
+  width: 61px;
+  height: 948px;
+  background: #dd4646;
+  left: 715px;
+  top: 62px;
+  transform: rotate(90deg);
+  z-index: -1;
+  border-left: 2px solid #000;
+}
+.section4 .line4 {
+  position: absolute;
+  width: 61px;
+  height: 947px;
+  background: #dd4646;
+  left: 716px;
+  top: -331px;
+  transform: rotate(90deg);
+  z-index: 1;
+  border-right: 2px solid #000;
+}
+
+.section4 .event-shower .non-tech1 {
+  position: absolute;
+  background: #000;
+  width: 861px;
+  height: 329px;
+  top: -290px;
+  left: -683px;
+  top: 121%;
+  transform: rotate(-45deg);
+  color: #fff;
+}
+
+.section4 .event-shower .non-tech2 {
+  position: absolute;
+  background: #000;
+  width: 861px;
+  height: 329px;
+  top: -290px;
+  left: 219px;
+  top: 487px;
+  transform: rotate(-135deg);
+  color: #fff;
+}
+
+.section4 .event-shower .non-tech3 {
+  position: absolute;
+  background: #000;
+  width: 861px;
+  height: 329px;
+  top: -290px;
+  left: 222px;
+  top: -413px;
+  transform: rotate(-225deg);
+  color: #fff;
+}
+
+.section4 .event-shower .non-tech4 {
+  position: absolute;
+  background: #000;
+  width: 861px;
+  height: 329px;
+  top: -290px;
+  left: -680px;
+  top: -417px;
+  transform: rotate(-315deg);
+  color: #fff;
+}
+
+.event-list .nontech-event1 {
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* position: absolute; */
+  /* top: 15%; */
+  /* transition: .4s; */
+}
+.event-list .nontech-event2 {
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* position: absolute; */
+  /* top: 15%; */
+}
+.event-list .nontech-event3 {
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* position: absolute; */
+  /* top: 15%; */
+}
+.event-list .nontech-event4 {
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* position: absolute; */
+  /* top: 15%; */
+}
+
+.event-list .op1 {
+  width: 75px;
+  height: 75px;
+  background: #000000;
+  border-radius: 50%;
+  margin: 13px;
+}
+
+.event-list .op2 {
+  width: 75px;
+  height: 75px;
+  background: #000000;
+  border-radius: 50%;
+  margin: 13px;
+}
+
+.event-list .op3 {
+  width: 75px;
+  height: 75px;
+  background: #000000;
+  border-radius: 50%;
+  margin: 13px;
+}
+
+.event-list .op4 {
+  width: 75px;
+  height: 75px;
+  background: #000000;
+  border-radius: 50%;
+  margin: 13px;
+}
+
+.event-list img:hover {
+  width: 90px;
+  height: 90px;
+  margin-left: 5px;
+  margin-top: 5px;
+  transition: 0.4s;
+}
+
+.event-list h6 {
+  color: #000;
+  background: #fff;
+  font-size: 14px;
+  width: 140px;
+  margin-top: -35px;
+  margin-left: -20px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+}
+
+.section4 .event-shower .rotate-menu .register {
+  position: absolute;
+  left: 20px;
+  color: #000;
+  background: #41b5c9;
+}
+
+.section4 a {
+  position: absolute;
+  font-size: 15px;
+  background: #111;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ddd;
+  top: 105%;
+  left: 85%;
+  transition: 0.5s;
+  box-shadow: 0px 0px 10px 5px #464545;
+}
+
+.section4 a:hover {
+  padding: 12px 12px;
+}
+
+.section4 b {
+  position: absolute;
+  top: 107%;
+  left: 38%;
+  font-size: 18px;
+}
+
+.section4 p {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  width: 80%;
+  color: #fff;
+  padding: 19px 74px;
+  border-bottom: 2px solid;
+  margin-left: 40px;
+}
+
+.section4 .non-tech2 p{
+    padding: 50px;
+}

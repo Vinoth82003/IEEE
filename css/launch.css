@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+.section .content {
+  position: absolute;
+  transform: translateY(-50px);
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.content h1 {
+  padding: 10px;
+  font-size: 64px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+}
+.content p {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+}
+.content h1 span {
+  color: #ff3753;
+  font-family: "Lora", serif;
+}
+
+.launch-time {
+  position: absolute;
+  left: 0px;
+  top: 150px;
+  width: 450px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.launch-time::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 640px;
+  background: #17f017;
+  animation: animate 3s linear infinite;
+}
+.launch-time::after {
+  content: "";
+  position: absolute;
+  background: #000;
+  border-radius: 16px;
+  inset: 4px;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(350deg);
+  }
+}
+.container .light-mode {
+  background-color: #fff;
+  color: #000;
+}
+@media (max-width: 400px) {
+  .launch-time {
+    position: absolute;
+    left: 27px;
+    top: 158px;
+    width: 300px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+}
+.launch-time .box {
+  display: flex;
+  background: transparent;
+  width: 400px;
+  height: 100px;
+  color: #fff;
+  z-index: 10;
+  border-radius: 20px;
+}
+.launch-time div {
+  color: #fff;
+  flex-basis: 100px;
+}
+.launch-time div #days {
+  position: absolute;
+  left: 55px;
+}
+.launch-time div #hours {
+  position: absolute;
+  left: 155px;
+}
+.launch-time div #minutes {
+  position: absolute;
+  left: 255px;
+}
+.launch-time div #seconds {
+  position: absolute;
+  left: 355px;
+}
+.launch-time div p {
+  font-size: 60px;
+  margin-bottom: -5px;
+}
+.launch-time .box div span {
+  position: relative;
+  top: 80px;
+  left: 55px;
+  font-size: 20px;
+  z-index: 10;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+}
+.launch-time .box div .dis1 {
+  position: absolute;
+}
+.launch-time .box div .dis2 {
+  position: absolute;
+  left: 160px;
+}
+.launch-time .box div .dis3 {
+  position: absolute;
+  left: 260px;
+}
+.launch-time .box div .dis4 {
+  position: absolute;
+  left: 360px;
+}
+.more {
+  position: absolute;
+  color: #00ffff;
+  font-size: 15px;
+  top: 260px;
+  left: 70px;
+}
+.button {
+  font-family: "Times New Roman", Times, serif;
+}
