@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 .section .content {
   position: absolute;
@@ -145,3 +145,17 @@
 .button {
   font-family: "Times New Roman", Times, serif;
 }
+@media screen and (max-width: 480px) and (min-width: 320px){
+.launch-time {
+  position: absolute;
+  left: -99px;
+  top: 418px;
+  width: 450px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+} */
