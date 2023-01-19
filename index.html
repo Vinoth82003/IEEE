@@ -4,203 +4,221 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>menu with scroll</title>
-    <link rel="stylesheet" href="/css/index.css" />
-    <link rel="stylesheet" href="/css/tech.css" />
-    <link rel="stylesheet" href="/css/non-tech.css" />
-    
+    <title>event</title>
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <nav>
-      <div class="menu">
-        <ul>
-          <li><a href="#home">home</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#tech">tech</a></li>
-          <li><a href="#non-tech">non-tech</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <section id="home" class="section1">
-      <div class="marq">
-        <marquee behavoir="scroll" direction="left"
+    <div class="container">
+      <nav>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#home" class="home active"> home </a>
+            </li>
+            <li><a href="#event" class="event">events</a></li>
+            <li><a href="#tech" class="tech">tech</a></li>
+            <li><a href="#non-tech" class="non-tech">non-tech</a></li>
+            <li><a href="#contact" class="contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section id="home" class="section1">
+        <marquee direction="left" class="marquee"
           >Event date time and some other details.</marquee
         >
-      </div>
-      <div class="logo"></div>
-      <div class="college-name">
-        <h1>
-          <span>panimalar </span><br />
-          engineerimg college
-        </h1>
-        <h2>An autonomous institution</h2>
-        <h3>
-          affiliated to anna university, chennai <br />
-          <span>(jaisakthi education trust)</span>
-        </h3>
-      </div>
-      <div class="events"><h3>Events</h3></div>
-    </section>
-    <section id="events" class="section2">
-      <div class="content">
-        <p id="dept">Department of Information Technology</p>
-        <h1>We're <span> launching </span> Event</h1>
-        <div class="launch-time">
-          <div class="box">
-            <div>
-              <p id="days">00</p>
-              <span class="dis1">Days</span>
+        <div class="college-name">
+          <div class="logo"></div>
+          <h1>panimalar engineerimg college</h1>
+          <h2>An autonomous institution</h2>
+          <h3>
+            affiliated to anna university, chennai <br />
+            <span>(jaisakthi education trust)</span>
+          </h3>
+        </div>
+        <a href="#event" id="next" class="hnext"></a>
+      </section>
+      <section id="event" class="section2">
+        <div class="event-box">
+          <div class="event-content">
+            <p id="dept">Department of Information Technology</p>
+            <h1>We're <span> launching </span> Event</h1>
+            <div class="launch-time">
+              <div class="box">
+                <div>
+                  <p id="days">00</p>
+                  <span class="dis1">Days</span>
+                </div>
+                <div>
+                  <p id="hours">00</p>
+                  <span class="dis2">Hours</span>
+                </div>
+                <div>
+                  <p id="minutes">00</p>
+                  <span class="dis3">Minutes</span>
+                </div>
+                <div>
+                  <p id="seconds">00</p>
+                  <span class="dis4">Seconds</span>
+                </div>
+              </div>
             </div>
-            <div>
-              <p id="hours">00</p>
-              <span class="dis2">Hours</span>
+          </div>
+        </div>
+        <a href="#home" id="prev" class="eprev"></a>
+        <a href="#tech" id="next" class="enext"></a>
+        <script src="/js/event.js"></script>
+      </section>
+      <section id="tech" class="section3">
+        <div class="tech-container">
+          <ul>
+            <li class="box1">
+              <img src="/tech-images/hack.png" class="img1" />
+              <h4>debugging</h4>
+            </li>
+            <li class="box2">
+              <img src="/tech-images/typewritting.png" class="img2" />
+              <h4>typewriting</h4>
+            </li>
+            <li class="box3">
+              <img src="/tech-images/tech-quize.png" class="img3" />
+              <h4>tech quiz</h4>
+            </li>
+            <li class="box4">
+              <img src="/tech-images/build-code.png" class="img4" />
+              <h4>build code</h4>
+            </li>
+          </ul>
+          <div class="tech-content">
+            <div class="content-viewer">
+              <div class="tech-event1">
+                <h2>debugging</h2>
+                <p class="para">
+                  qwerty usinf the asd fgth ehdkbee bhrb bdrhh fhejfnkdj
+                  nsbjfbke vbwkjebjkwwe nhwwwjfbjkkjr bknbhebf vbvvdvdjbv
+                  bvnbsskurhjgjjwe bbbsueiidvb,j hvbuveyuhei hbdfluywihhkj
+                  ,jwhhfuu hsruh <br />
+                  qqqneij nitjjnd.frrrjnbjn jrnt.kjdf vekrhb brjhfb berhgjjjjj
+                  kdjrhjd ndghh bvljhh,uh bbhhsgfjhuisjhj bjrsjhgiuuh
+                  vbbvwluiefhil heuewufhwwwef bfhiuwehfvjhe ejhfuwifhf
+                  fbeifjhkif hiuewj <br />
+                  ggsjjjjjj kjshcmvameb mwmbbhqqqrhjb bvhqhgwuf f kwkhhl bbru78
+                  sgl8etyfhu bbl4ryu uhe8ywug hwli3yuys uyt823y8 luet4823yh
+                  uwyt82y7 iy4t892y hiluy4t82y ue4yr834yg e84yt8y ;ryt8u dyrt83
+                  dhutt88 <br />
+                  vvvnelllllllouiyuevssssssssssj dihgg8our0qjwo hr;9029r
+                  ukhr;qui ,diu209999 .si.ut290eid ;iur0qid isur[029eid
+                  .soi100000ecn] ajh3rr1i2uq .airhg;qqu2 iuw459011glaeirut920
+                  lwt;8u ehg ;sett2iu <br />
+                  gwevru 1grluqwb jbsi;utiiii woirlwul huurlllll u32y u u
+                  ry89749`0830-`r8ur901 2r89183019 t829ue912i03i
+                  yr189u3`0i219uu85u 8t90184109 50174`9- uyiouroqiw uyw;eiowooo
+                  uwrq9ieq0o y80q9 8ur93i0- 824790 <br />
+                </p>
+                <a href="#tech" class="register-button">register</a>
+                <a href="/like-image/logo.png" download class="download-button"
+                  >download</a
+                >
+              </div>
+              <div class="tech-event2">
+                <h2>typewritting</h2>
+                <p class="para">
+                  event2 usinf the asd fgth ehdkbee bhrb bdrhh fhejfnkdj
+                  nsbjfbke vbwkjebjkwwe nhwwwjfbjkkjr bknbhebf vbvvdvdjbv
+                  bvnbsskurhjgjjwe bbbsueiidvb,j hvbuveyuhei hbdfluywihhkj
+                  ,jwhhfuu hsruh <br />
+                  qqqneij nitjjnd.frrrjnbjn jrnt.kjdf vekrhb brjhfb berhgjjjjj
+                  kdjrhjd ndghh bvljhh,uh bbhhsgfjhuisjhj bjrsjhgiuuh
+                  vbbvwluiefhil heuewufhwwwef bfhiuwehfvjhe ejhfuwifhf
+                  fbeifjhkif hiuewj <br />
+                  ggsjjjjjj kjshcmvameb mwmbbhqqqrhjb bvhqhgwuf f kwkhhl bbru78
+                  sgl8etyfhu bbl4ryu uhe8ywug hwli3yuys uyt823y8 luet4823yh
+                  uwyt82y7 iy4t892y hiluy4t82y ue4yr834yg e84yt8y ;ryt8u dyrt83
+                  dhutt88 <br />
+                  vvvnelllllllouiyuevssssssssssj dihgg8our0qjwo hr;9029r
+                  ukhr;qui ,diu209999 .si.ut290eid ;iur0qid isur[029eid
+                  .soi100000ecn] ajh3rr1i2uq .airhg;qqu2 iuw459011glaeirut920
+                  lwt;8u ehg ;sett2iu <br />
+                  gwevru 1grluqwb jbsi;utiiii woirlwul huurlllll u32y u u
+                  ry89749`0830-`r8ur901 2r89183019 t829ue912i03i
+                  yr189u3`0i219uu85u 8t90184109 50174`9- uyiouroqiw uyw;eiowooo
+                  uwrq9ieq0o y80q9 8ur93i0- 824790 <br />
+                </p>
+                <a href="#tech" class="register-button">register</a>
+                <a href="/like-image/logo.png" download class="download-button"
+                  >download</a
+                >
+              </div>
+              <div class="tech-event3">
+                <h2>tech quiz</h2>
+                <p class="para">
+                  qwerty usinf the asd fgth ehdkbee bhrb bdrhh fhejfnkdj
+                  nsbjfbke vbwkjebjkwwe nhwwwjfbjkkjr bknbhebf vbvvdvdjbv
+                  bvnbsskurhjgjjwe bbbsueiidvb,j hvbuveyuhei hbdfluywihhkj
+                  ,jwhhfuu hsruh <br />
+                  qqqneij nitjjnd.frrrjnbjn jrnt.kjdf vekrhb brjhfb berhgjjjjj
+                  kdjrhjd ndghh bvljhh,uh bbhhsgfjhuisjhj bjrsjhgiuuh
+                  vbbvwluiefhil heuewufhwwwef bfhiuwehfvjhe ejhfuwifhf
+                  fbeifjhkif hiuewj <br />
+                  ggsjjjjjj kjshcmvameb mwmbbhqqqrhjb bvhqhgwuf f kwkhhl bbru78
+                  sgl8etyfhu bbl4ryu uhe8ywug hwli3yuys uyt823y8 luet4823yh
+                  uwyt82y7 iy4t892y hiluy4t82y ue4yr834yg e84yt8y ;ryt8u dyrt83
+                  dhutt88 <br />
+                  vvvnelllllllouiyuevssssssssssj dihgg8our0qjwo hr;9029r
+                  ukhr;qui ,diu209999 .si.ut290eid ;iur0qid isur[029eid
+                  .soi100000ecn] ajh3rr1i2uq .airhg;qqu2 iuw459011glaeirut920
+                  lwt;8u ehg ;sett2iu <br />
+                  gwevru 1grluqwb jbsi;utiiii woirlwul huurlllll u32y u u
+                  ry89749`0830-`r8ur901 2r89183019 t829ue912i03i
+                  yr189u3`0i219uu85u 8t90184109 50174`9- uyiouroqiw uyw;eiowooo
+                  uwrq9ieq0o y80q9 8ur93i0- 824790 <br />
+                </p>
+                <a href="#tech" class="register-button">register</a>
+                <a href="/like-image/logo.png" download class="download-button"
+                  >download</a
+                >
+              </div>
+              <div class="tech-event4">
+                <h2>build-code</h2>
+                <p class="para">
+                  qwerty usinf the asd fgth ehdkbee bhrb bdrhh fhejfnkdj
+                  nsbjfbke vbwkjebjkwwe nhwwwjfbjkkjr bknbhebf vbvvdvdjbv
+                  bvnbsskurhjgjjwe bbbsueiidvb,j hvbuveyuhei hbdfluywihhkj
+                  ,jwhhfuu hsruh <br />
+                  qqqneij nitjjnd.frrrjnbjn jrnt.kjdf vekrhb brjhfb berhgjjjjj
+                  kdjrhjd ndghh bvljhh,uh bbhhsgfjhuisjhj bjrsjhgiuuh
+                  vbbvwluiefhil heuewufhwwwef bfhiuwehfvjhe ejhfuwifhf
+                  fbeifjhkif hiuewj <br />
+                  ggsjjjjjj kjshcmvameb mwmbbhqqqrhjb bvhqhgwuf f kwkhhl bbru78
+                  sgl8etyfhu bbl4ryu uhe8ywug hwli3yuys uyt823y8 luet4823yh
+                  uwyt82y7 iy4t892y hiluy4t82y ue4yr834yg e84yt8y ;ryt8u dyrt83
+                  dhutt88 <br />
+                  vvvnelllllllouiyuevssssssssssj dihgg8our0qjwo hr;9029r
+                  ukhr;qui ,diu209999 .si.ut290eid ;iur0qid isur[029eid
+                  .soi100000ecn] ajh3rr1i2uq .airhg;qqu2 iuw459011glaeirut920
+                  lwt;8u ehg ;sett2iu <br />
+                  gwevru 1grluqwb jbsi;utiiii woirlwul huurlllll u32y u u
+                  ry89749`0830-`r8ur901 2r89183019 t829ue912i03i
+                  yr189u3`0i219uu85u 8t90184109 50174`9- uyiouroqiw uyw;eiowooo
+                  uwrq9ieq0o y80q9 8ur93i0- 824790 <br />
+                </p>
+                <a href="#tech" class="register-button">register</a>
+                <a href="/like-image/logo.png" download class="download-button"
+                  >download</a
+                >
+              </div>
             </div>
-            <div>
-              <p id="minutes">00</p>
-              <span class="dis3">Minutes</span>
-            </div>
-            <div>
-              <p id="seconds">00</p>
-              <span class="dis4">Seconds</span>
-            </div>
           </div>
         </div>
-      </div>
-      <script src="/js/launchtime.js"></script>
-      <div class="tech"><h3>technical events</h3></div>
-    </section>
-    <section id="tech" class="section3">
-      <ul>
-        <li class="box1">
-          <img src="/section3-image/hack.png" class="img1" />
-          <h4>debugging</h4>
-        </li>
-        <li class="box2">
-          <img src="/section3-image/typewritting.png" class="img2" />
-          <h4>typewriting</h4>
-        </li>
-        <li class="box3">
-          <img src="/section3-image/tech-quize.png" class="img3" />
-          <h4>tech quiz</h4>
-        </li>
-        <li class="box4">
-          <img src="/section3-image/build-code.png" class="img4" />
-          <h4>build code</h4>
-        </li>
-      </ul>
-      <div class="event-viewer">
-        <div class="event-roller">
-          <div class="event-details1">
-            <h5>debugging</h5>
-            <p>
-              Debugging is the process of finding and fixing errors or bugs in
-              the source code of any software (small defenition of debugging).
-              <br /><br />
-              This is
-              <i>technical</i> event. <i>Not team</i> game. a single part of the
-              code will given , There will be some <i>mistake</i> we have
-              correct that mistake . we will give some time every one have to
-              find the bug within the given time . One who debug correctly or on
-              who have maximum count of debugs correctly will win prize<br />
-              <b>to know more download brochure...</b>
-            </p>
-            <a href="" class="register">register</a>
-
-            <a href="#" download="brochure">download</a>
-          </div>
-          <div class="event-details2">
-            <h5>typewriting</h5>
-            <p>
-              writing by pushing keys on a keyboard is <i>typewriting</i> . if
-              your handwriting is so messy that no one can read it, you might
-              want to try <i>typewriting </i> your easy instead. (small
-              defenition for typewriting) . <br />
-              <br />
-              we will give content to the participants and one who type the
-              content as fast as he/she can, and one who type the content in
-              <i>minimum time</i> with <i>minimum mistakes</i> will win prizes .
-              <b>to know more download brochure...</b>
-            </p>
-            <a href="" class="register">register</a>
-
-            <a href="#" download="brochure">download</a>
-          </div>
-          <div class="event-details3">
-            <h5>tech quiz</h5>
-            <p>
-              A quiz is a form of <i>game or mind sport</i> in which players
-              <i>attempt to answer</i> questions correctly on
-              <i> one or several specific topics</i>. (small defenition about
-              quiz) <br /><br />
-              it is <i>not team game</i> we will ask questions whichis related
-              to <i>technical topics</i> . one of participants who answers
-              correctly for question will get 1 mark. one who has more point
-              will win prizes
-
-              <b>to know more download brochure...</b>
-            </p>
-            <a href="" class="register">register</a>
-
-            <a href="#" download="brochure">download</a>
-          </div>
-          <div class="event-details4">
-            <h5>build code</h5>
-            <p>
-              build-code is the processs of problem solving using any kind of
-              language. <br /><br />
-              In this competition we will give <i>any problem </i>to the
-              participants and the participants should build a code for that
-              problem and <i>solve the problem given</i> . One who build the
-              code for the given problem with
-              <i>minimum number of errors</i> he/she will be the winner of the
-              competition. the winners are selected by
-              <i>logic and errors</i> in code . participants can use
-              <i>any programming language</i> to solve the problem given.
-
-              <b>to know more download brochure...</b>
-            </p>
-            <a href="" class="register">register</a>
-            <a href="#" download="brochure">download</a>
-          </div>
-        </div>
-      </div>
-      <script src="/js/tech.js"></script>
-      <div class="non-tech">
-        <h3>non-technical</h3>
-      </div>
-    </section>
-    <section id="non-tech" class="section4">
-      <div class="contact">
-        <h3>contact</h3>
-      </div>
-      <div class="event-list">
-        <div class="nontech-event1">
-          <img src="/section4-images/photography.png" class="op1" />
-          <h6>photography</h6>
-        </div>
-        <div class="nontech-event2">
-          <img src="/section4-images/storywriting.png" class="op2" />
-          <h6>cinematic story</h6>
-        </div>
-        <div class="nontech-event3">
-          <img src="/section4-images/photography.png" class="op3" />
-          <h6>event name</h6>
-        </div>
-        <div class="nontech-event4">
-          <img src="/section4-images/storywriting.png" class="op4" />
-          <h6>event name</h6>
-        </div>
-      </div>
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-      <div class="line4"></div>
-      <div class="event-shower">
-        <div class="box">
-          <div class="rotate-menu">
-            <div class="non-tech1">
-              <h5>photography</h5>
+        <script src="/js/tech.js"></script>
+        <a href="#non-tech" class="tnext" id="next"></a>
+        <a href="#event" class="tprev" id="prev"></a>
+      </section>
+      <section id="non-tech" class="section4">
+        <div class="nontech-container">
+          <div class="nontech-event1">
+            <img src="/nontech-image/photography.png" class="img1" />
+            <h2>photography</h2>
+            <div class="nontech-eventcontent">
               <p>
                 " the only prersons can freeze the time is -photographer. "
                 <br /><br />
@@ -215,121 +233,153 @@
               <a href="" class="register">register</a>
               <a href="#" download="brochure">download</a>
             </div>
-            <div class="non-tech2">
-              <h5>story writing</h5>
+          </div>
+          <div class="nontech-event2">
+            <img src="/nontech-image/storywriting.png" class="img2" />
+            <h2>storywriting</h2>
+            <div class="nontech-eventcontent">
               <p>
-                "A writer is simply a photographer of thoughts." <br /><br />
-                this is <i>non technical</i> event. in this event we will
-                provide a paper and pen , participants should write one story
-                within the given time. the story should be cinematic and with
-                good moral. which story has good story content with good ending
-                will win prize . if any one has twist in his story will gain
-                extra marks
-                
+                " the only prersons can freeze the time is -photographer. "
+                <br /><br />
+                this is <i>non technical</i> event. in this event every one take
+                a photograph of any this . which one's photograph is best will
+                win price . it is <i>not team </i>event . <br />
+                the photograph should be uniqueue . and should be good in look.
+                there will be 3 rounds or more according to the participants .
+                the spots will be anounced before the event get started.
               </p>
               <b>to know more download brochure...</b>
               <a href="" class="register">register</a>
               <a href="#" download="brochure">download</a>
             </div>
-            <div class="non-tech3">
-              <h5>content</h5>
-
+          </div>
+          <div class="nontech-event3">
+            <img src="/nontech-image/bottlegame.png" class="img3" />
+            <h2>Event name</h2>
+            <div class="nontech-eventcontent">
+              <p>
+                " the only prersons can freeze the time is -photographer. "
+                <br /><br />
+                this is <i>non technical</i> event. in this event every one take
+                a photograph of any this . which one's photograph is best will
+                win price . it is <i>not team </i>event . <br />
+                the photograph should be uniqueue . and should be good in look.
+                there will be 3 rounds or more according to the participants .
+                the spots will be anounced before the event get started.
+              </p>
               <b>to know more download brochure...</b>
-
               <a href="" class="register">register</a>
-              <a href="#" download="brochure">download</a>
+              <a href="#" class="download" download="brochure">download</a>
             </div>
-            <div class="non-tech4">
-              <h5>content</h5>
-
+          </div>
+          <div class="nontech-event4">
+            <img src="/nontech-image/cube.png" class="img4" />
+            <h2>Event name</h2>
+            <div class="nontech-eventcontent">
+              <p>
+                " the only prersons can freeze the time is -photographer. "
+                <br /><br />
+                this is <i>non technical</i> event. in this event every one take
+                a photograph of any this . which one's photograph is best will
+                win price . it is <i>not team </i>event . <br />
+                the photograph should be uniqueue . and should be good in look.
+                there will be 3 rounds or more according to the participants .
+                the spots will be anounced before the event get started.
+              </p>
               <b>to know more download brochure...</b>
-
               <a href="" class="register">register</a>
               <a href="#" download="brochure">download</a>
             </div>
           </div>
         </div>
-      </div>
-      
-    </section>
-    <section id="contact" class="section5">
-      <div class="container">
-        <h1>Connect With Us</h1>
-        <p>
-          We would love to respond to your queries and help you succeed. <br />
-          Feel free to get in touch with us
-        </p>
-        <div class="contact-box">
-          <div class="contact-left">
-            <h3>Send your request</h3>
-            <form action="#contact">
-              <div class="input-row">
-                <div class="input-group">
-                  <label>Name</label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Vinoth"
-                  />
+        <a href="#contact" class="nnext" id="next"></a>
+        <a href="#tech" class="nprev" id="prev"></a>
+      </section>
+      <section id="contact" class="section5">
+        <div class="contact-container">
+          <h1>Connect With Us</h1>
+          <p>
+            We would love to respond to your queries and help you succeed. <br />
+            Feel free to get in touch with us
+          </p>
+          <div class="contact-box">
+            <div class="contact-left">
+              <h3>Send your request</h3>
+              <form action="#contact">
+                <div class="input-row">
+                  <div class="input-group">
+                    <label>Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Vinoth"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label>Phone</label>
+                    <input
+                      type="text"
+                      id="phnum"
+                      placeholder="+91 9384460843"
+                      required
+                    />
+                  </div>
                 </div>
-                <div class="input-group">
-                  <label>Phone</label>
-                  <input type="text" id="phnum" placeholder="+91 9384460843" />
+                <div class="input-row">
+                  <div class="input-group">
+                    <label>Email</label>
+                    <input
+                      type="email"
+                      id="mail"
+                      placeholder="Vinothg06@gmail.com"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label>Subject</label>
+                    <input type="text" placeholder="Event details" />
+                  </div>
                 </div>
-              </div>
-              <div class="input-row">
-                <div class="input-group">
-                  <label>Email</label>
-                  <input
-                    type="text"
-                    id="mail"
-                    placeholder="Vinothg06@gmail.com"
-                  />
-                </div>
-                <div class="input-group">
-                  <label>Subject</label>
-                  <input type="text" placeholder="Event details" />
-                </div>
-              </div>
-              <label>Message</label>
-              <textarea
-                name="mess"
-                id="mess"
-                placeholder="Your message"
-                rows="5"
-              ></textarea>
-
-              <button type="submit" onclick="send()">SEND</button>
-            </form>
-          </div>
-          <div class="contact-right">
-            <h3>Reach us</h3>
-            <table>
-              <tr>
-                <td>Email</td>
-                <td>eventcontact@gmail.com</td>
-              </tr>
-              <tr>
-                <td>Phone</td>
-                <td>+91 938 446 0843</td>
-              </tr>
-              <tr>
-                <td>Address</td>
-                <td>
-                  Bangalore Trunk road, Varadharajapuram<br />
-                  Nazarethpet, Poonamalle, Chennai-600 123.
-                </td>
-              </tr>
-            </table>
+                <label>Message</label>
+                <textarea
+                  name="mess"
+                  id="mess"
+                  placeholder="Your message"
+                  rows="5"
+                  required
+                ></textarea>
+  
+                <button type="submit" onclick="send()">SEND</button>
+              </form>
+            </div>
+            <div class="contact-right">
+              <h3>Reach us</h3>
+              <table>
+                <tr>
+                  <td>Email</td>
+                  <td>eventcontact@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>Phone</td>
+                  <td>+91 938 446 0843</td>
+                </tr>
+                <tr>
+                  <td>Address</td>
+                  <td>
+                    Bangalore Trunk road, Varadharajapuram<br />
+                    Nazarethpet, Poonamalle, Chennai-600 123.
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
-      </div>
-      <script src="/js/contact.js"></script>
-    </section>
-
-    <script src="anchormenu.js"></script>
-    <script src="/js/non-tech.js"></script>
-
+        <script src="/js/contact.js"></script>
+        <a href="#non-tech" class="cprev" id="prev"></a>
+      </section>
+    </div>
+    <script src="/js/index.js"></script>
   </body>
 </html>

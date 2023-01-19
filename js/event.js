@@ -1,4 +1,4 @@
-var countDownDate = new Date("jan 31, 2023 00:00:00").getTime();
+var countDownDate = new Date("jun 8, 2023 00:00:00").getTime();
 var x = setInterval(function () {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -10,18 +10,23 @@ var x = setInterval(function () {
 
   if (seconds < 10) {
     seconds = "0" + seconds;
+    document.getElementById("seconds").style.color = "red";
   }
   if (seconds > 10) {
     document.getElementById("seconds").style.color = "white";
   }
   if (minutes < 10) {
     minutes = "0" + minutes;
+    document.getElementById("minutes").style.color = "red";
+
   }
   if (minutes > 10) {
     document.getElementById("minutes").style.color = "white";
   }
   if (hours < 10) {
     hours = "0" + hours;
+    document.getElementById("hours").style.color = "red";
+
   }
   if (hours <= 4) {
     document.getElementById("hours").style.color = "red";
