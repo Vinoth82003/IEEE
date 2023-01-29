@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 
- .section2, .section4 , .section5{
+ .section3,.section2, .section4 , .section5{
     display: none;
 }
 
@@ -120,7 +120,7 @@ li a.active{
 .section3{
 width: 100%;
 height: 100vh;
-display: flex;
+/* display: flex; */
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -268,3 +268,174 @@ border-radius: 50%;
 .buttons .down{
     float: left;
 } 
+@media (max-width:1147px){
+    .logo img {
+        width: 78px;
+        height: 82px;
+    }
+
+}
+@media (max-width:768px){
+    .logo {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        right: 65%;
+        margin-top: 70px;
+    }
+}
+/* L size mobile*/
+@media (max-width:606px){
+    nav {
+        position: fixed;
+        width: 100%;
+        background: #153655;
+        padding: 8px 9px;
+    }
+    .section1 .college-name {
+        background: #264d70;
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        padding: 3px 0px;
+    }
+    .college-name h1 {
+        color: #f8f6f7;
+        font-size: 20px;
+        font-family: sans-serif;
+        margin-left: -7%;
+        text-transform: capitalize;
+    }
+    .college-name h2 {
+        background: #ff00009a;
+        color: #fff;
+        font-size: 15px;
+        padding: 1px 5px;
+        margin-left: -53px;
+        border: 1px solid #3b0000;
+        text-transform: capitalize;
+    }
+    .college-name h3 {
+        color: #fff;
+        margin-left: 0px;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    .college-name h3 span {
+        margin-left: 12px;
+        font-size: 15px;
+    }
+    .logo {
+        position: absolute;
+        width: 100px;
+        height: 101px;
+        border-radius: 50%;
+        right: 71%;
+        margin-top: 51px;
+    }
+    .logo img {
+        width: 66px;
+        height: 69px;
+    }
+    .section1 .marquee {
+        position: absolute;
+        margin-top: 132px;
+        background: #ffbb00;
+        padding: 2px 0px;
+        color: #9b1010;
+    }
+    .section1 {
+        width: 100%;
+        height: 100vh;
+        background-image: url(/images/college-image.jpg);
+        background-size: 100% 100%;
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media(max-width:375px){
+    nav {
+        position: fixed;
+        width: 100%;
+        background: #153655;
+        padding: 8px 9px;
+        font-size: 15px;
+    }
+
+    .section1 .college-name {
+        background: #264d70;
+        margin-top: 53px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        padding: 3px 0px;
+    }
+    .section1 .marquee {
+        position: absolute;
+        margin-top: 150px;
+        background: #ffbb00;
+        padding: 2px 0px;
+        color: #9b1010;
+    }
+    .logo img {
+        width: 56px;
+        height: 59px;
+    }
+    .logo {
+        position: absolute;
+        width: 100px;
+        height: 101px;
+        border-radius: 50%;
+        right: 73%;
+        margin-top: 51px;
+    }
+}
+@media(max-width:320px){
+    .college-name h1 {
+        color: #f8f6f7;
+        font-size: 20px;
+        font-family: sans-serif;
+        margin-left: -3%;
+        text-transform: capitalize;
+    }
+    .college-name h2 {
+        background: #ff00009a;
+        color: #fff;
+        font-size: 15px;
+        padding: 1px 5px;
+        margin-left: 0px;
+        border: 1px solid #3b0000;
+        text-transform: capitalize;
+    }
+    .college-name h3 {
+        color: #fff;
+        margin-left: 23px;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    .logo {
+        position: absolute;
+        width: 100px;
+        height: 101px;
+        border-radius: 50%;
+        right: 66%;
+        margin-top: 51px;
+    }
+    .logo img {
+        width: 49px;
+        height: 50px;
+    }
+    nav {
+        position: fixed;
+        width: 100%;
+        background: #153655;
+        padding: 8px 9px;
+        font-size: 13px;
+    }
+}
