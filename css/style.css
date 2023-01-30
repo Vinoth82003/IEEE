@@ -447,6 +447,199 @@ li a.active{
 width: 100%;
 height: 100vh;
 }
+.section4-container{
+  width: 100%;
+  height: 100vh;
+  /* background: #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-holder{
+  width: 90%;
+  height: 85%;
+  background: #17c3b2;
+  overflow: hidden;
+  position: relative;
+}
+
+.event-parent{
+  width: 400px;
+  height: 160px;
+  /* padding: 10px; */
+  background: #023e8a;
+  margin: 5px;
+  color: #f8f6f7;
+  border-radius: 5px;
+}
+.parent1{
+  position: absolute;
+  background-color: #111;
+  /* width: 100%; */
+}
+.parent1 h1{
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 60px;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.parent2 {
+  /* width: 89%; */
+  position: absolute;
+  background: #1c00b5;
+  right: 5px;
+  margin-top: 170px;
+}
+
+.parent2 h1{
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 60px;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.parent3{
+  position: absolute;
+  background-color: #111;
+  margin-top: 335px;
+  /* width: 100%; */
+}
+.parent3 h1{
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 60px;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.parent4 {
+  /* width: 100%; */
+  position: absolute;
+  background: #1c00b5;
+  right: 5px;
+  margin-top: 500px;
+}
+
+.parent4 h1{
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 60px;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.debugging{
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 5px 10px;
+}
+
+.typewritting{
+  width: 140px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 5px 250px;
+}
+
+.tech-quiz{
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 5px 10px;
+}
+
+.build-code{
+  width: 140px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 5px 250px;
+}
+
+.tech-name{
+  position: absolute;
+  color: #f8f6f7;
+  /* background: #023e8a; */
+  width: 50px;
+  margin-top: 120px;
+  left: 600px;
+  transform: rotate(-45deg);
+}
+
+.tech-name h1{
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  gap: 5px;
+  /* transform: rotate(-45deg); */
+  transition: .4s;
+}
+.tech-name h1 span{
+  transform: rotate(45deg);
+}
+
+.tech-name h1 .tech-color{
+  color: #9b1010;
+}
+
+.event-child{
+  width: 0px;
+  height: 160px;
+  background-color: #023e8a;
+  margin-top: -162px;
+  margin-left: 395px;
+  transition: .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-parent:hover .event-child{
+width: 800px;
+}
+
+.parent2:hover .child2{
+background-color: #222;
+margin-left: -795px;
+}
+
+.parent4:hover .child4{
+  background-color: #222;
+  margin-left: -795px;
+  }
+
+.child2, .child4{
+  /* transform: rotate(180deg); */
+  margin-top: -154px;
+  /* margin-left: -795px; */
+}
+
+.event-child:hover{
+  background: #111;
+}
+.content-holder:hover .h1{
+  scale: 0;
+}
+
+.event-child .child-content{
+  width: 700px;
+  height: 140px;
+  margin-top: 50px;
+  scale: 0;
+  transition: .6s;
+}
+.event-parent:hover .child-content{
+  scale: 1;
+}
 
 /* contact css starts */
 .section5{
