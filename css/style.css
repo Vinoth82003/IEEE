@@ -4,8 +4,154 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+.section2 {
+    background: #111;
+    color: #fff;
+  }
+  .section2 .event-content {
+    position: absolute;
+    transform: translateY(-50px);
+    color: #fff;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .event-box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .event-content h1 {
+    /* padding: 0% 10%; */
+    font-size: 64px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .event-content p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Times New Roman", Times, serif;
+    padding: 6% 20%;
+  }
+  .event-content h1 span {
+    color: #ff3753;
+    font-family: "Lora", serif;
+  }
+  
+  .launch-time {
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    width: 450px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 15% 20%;
+  }
+  .launch-time::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 640px;
+    background-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    );
+    animation: animate 3s linear infinite;
+  }
+  .launch-time::after {
+    content: "";
+    position: absolute;
+    background: #000;
+    border-radius: 16px;
+    inset: 4px;
+  }
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(350deg);
+    }
+  }
+  .launch-time .box {
+    display: flex;
+    background: transparent;
+    width: 400px;
+    height: 100px;
+    color: #fff;
+    z-index: 10;
+    border-radius: 20px;
+  }
+  .launch-time div {
+    color: #fff;
+    flex-basis: 100px;
+  }
+  .launch-time div #days {
+    position: absolute;
+    left: -42px;
+    top: -10px;
+  }
+  .launch-time div #hours {
+    position: absolute;
+    left: 65px;
+    top: -10px;
+  }
+  .launch-time div #minutes {
+    position: absolute;
+    left: 166px;
+    top: -10px;
+  }
+  .launch-time div #seconds {
+    position: absolute;
+    left: 271px;
+    top: -10px;
+  }
+  .launch-time div p {
+    font-size: 60px;
+    margin-bottom: -5px;
+  }
+  .launch-time .box div span {
+    position: relative;
+    top: 80px;
+    left: 55px;
+    font-size: 20px;
+    z-index: 10;
+    color: #fff;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .launch-time .box div .dis1 {
+    position: absolute;
+  }
+  .launch-time .box div .dis2 {
+    position: absolute;
+    left: 160px;
+  }
+  .launch-time .box div .dis3 {
+    position: absolute;
+    left: 260px;
+  }
+  .launch-time .box div .dis4 {
+    position: absolute;
+    left: 360px;
+  }
+  /* events css end */
+  
 
- .section3,.section2, .section4 , .section5{
+ .section3, .section4{
     display: none;
 }
 
@@ -268,6 +414,98 @@ border-radius: 50%;
 .buttons .down{
     float: left;
 } 
+
+/* contact css starts */
+.section5{
+    background-color: #c0c0c0;
+}
+
+.contact-container {
+    width: 80%;
+    margin: 94px auto;
+    
+  }
+  
+  .contact-box {
+    background: #fff;
+    display: flex;
+  }
+  
+  .contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+  }
+   h1 {
+    margin-bottom: 10px;
+  }
+  .container p {
+    margin-bottom: 40px;
+    font-weight: 540;
+  }
+  .input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .input-row .input-group {
+    flex-basis: 45%;
+  }
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  label {
+    margin-bottom: 8px;
+    display: block;
+    color: #1c00b5;
+  }
+  button {
+    background-color: #1c00b5;
+    color: #fff;
+    width: 100px;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px #1c00b54d;
+  }
+  
+  .contact-left h3 {
+    margin-bottom: 20px;
+    color: #1c00b5;
+    font-weight: 600;
+  }
+  .contact-right h3 {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: #1c00b5;
+    color: #fff;
+  }
+  table {
+    width: 50%;
+  }
+  tr td:first-child {
+    padding-right: 20px;
+  }
+  tr td {
+    padding-top: 20px;
+  }
 @media (max-width:1147px){
     .logo img {
         width: 78px;
