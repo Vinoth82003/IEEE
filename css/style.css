@@ -4,7 +4,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+.section5,.section2{
+  display: none;
+}
 .container{
     /* width: 100%; */
     /* height: 100%; */
@@ -147,11 +149,11 @@ li a.active{
 }
 
 .event-content #dept {
-  width: 130%;
+  width: 100%;
   padding-left: 44px;
-  padding-bottom: 78px;
+  padding-bottom: 70px;
   height: 10px;
-  font-size: 35px;
+  font-size: 28px;
 }
 .event-content h1 span {
   color: #ff3753;
@@ -748,6 +750,48 @@ margin-left: -795px;
         right: 65%;
         margin-top: 70px;
     }
+    .container p {
+      margin-bottom: 40px;
+      font-weight: 540;
+      font-size: 10px;
+      width: 64%;
+  }
+  .raw-content h1 {
+    color: #f8f6f7;
+    text-transform: capitalize;
+    font-size: 27px;
+    padding-top: 12px;
+}
+.container p {
+  margin-bottom: 40px;
+  font-weight: 548;
+  font-size: 12px;
+  width: 90%;
+}
+.section3 .tech-container div:hover {
+  background: #023e8a;
+  flex: 3;
+  width: 95%;
+  align-items: center;
+  margin-left: 0%;
+  z-index: 10;
+}
+.container p {
+  /* margin-bottom: 33px; */
+  font-weight: 548;
+  font-size: 12px;
+  width: 94%;
+  padding: 31px;
+  margin: -25px;
+}
+.section3 .tech-container div {
+  width: 58%;
+  height: 20%;
+  transition: 0.5s;
+  /* background: #153655; */
+  /* padding-left: 100px; */
+  /* margin-left: 50%; */
+}
 }
 /* L size mobile*/
 @media (max-width:606px){
@@ -820,6 +864,26 @@ margin-left: -795px;
         background-position: center;
         background-size: cover;
     }
+    .launch-time {
+      position: absolute;
+      left: -55px;
+      top: 297px;
+      width: 432px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 20px;
+      margin: 11% 11%;
+  }
+  .event-content h1 {
+    /* padding: 0% 10%; */
+    font-size: 58px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Times New Roman", Times, serif;
+}
 }
 @media(max-width:375px){
     nav {
@@ -902,4 +966,19 @@ margin-left: -795px;
         padding: 8px 9px;
         font-size: 13px;
     }
+    .raw-content h1 {
+      color: #f8f6f7;
+      text-transform: capitalize;
+      font-size: 25px;
+      padding-top: 18px;
+  }
+  /*Non-tech*/
+  .raw-content {
+    display: flex;
+    width: 100%;
+    /* flex-flow: column-reverse; */
+    /* background: #153655; */
+    padding-top: 3px;
+    flex-direction: column;
+}
 }
