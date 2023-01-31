@@ -194,6 +194,7 @@ li a.active{
     border-bottom: 1px solid #f74780;
 }
 /*Next buttons*/
+/* 
 #next {
   width: 40px;
   height: 40px;
@@ -330,7 +331,7 @@ li a.active{
   cursor: pointer;
   top: 500%;
   border-radius: 9px;
-}
+} */
 
 .section1{
     width: 100%;
@@ -882,6 +883,7 @@ margin-left: -795px;
       margin-bottom: 30px;
       position: absolute;
       color: #fff8fc;
+      font-size: 20px;
       /* background: #b1457b; */
       width: 700px;
       /* height: 310px; */
