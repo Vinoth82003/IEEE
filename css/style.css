@@ -5,9 +5,155 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-.section2{
-  display: none;
+/*section2*/
+.section2 {
+  width: 100%;
+  height: 100vh;
+  background: #555;
 }
+
+.time-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #414945;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.time-container .dept-name {
+  /* background: #f1f1f1; */
+  padding: 10px 50px;
+  text-transform: capitalize;
+  color: #f1f1f1;
+  font-size: 20px;
+}
+.time-container .dept-name span {
+  color: #e9906f;
+}
+
+.time-container .launch-name {
+  color: #f1f1f1;
+  padding: 10px 20px;
+  font-size: 35px;
+}
+
+.time-container .launch-name span {
+  color: rgb(243, 112, 112);
+}
+
+.time-container .calender-container {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+}
+
+.time-container .calender-container p {
+  width: 60px;
+  /* background: #e9906f; */
+  /* height: 60px; */
+  top: 50;
+  font-size: 53px;
+  display: flex;
+  padding-top: 10p;
+  justify-content: center;
+  align-items: center;
+}
+
+.days span {
+  width: 100%;
+  padding: 4px 10px;
+  text-align: center;
+  color: #f1f1f1;
+  background-color: #e9906f;
+  border-radius: 3px;
+}
+
+.minutes span {
+  width: 100%;
+  padding: 4px 10px;
+  text-align: center;
+  color: #f1f1f1;
+  background-color: #e9906f;
+  border-radius: 3px;
+}
+
+.hours span {
+  width: 100%;
+  padding: 4px 10px;
+  text-align: center;
+  color: #f1f1f1;
+  background-color: #e9906f;
+  border-radius: 3px;
+}
+
+.seconds span {
+  width: 100%;
+  padding: 4px 10px;
+  text-align: center;
+  color: #f1f1f1;
+  background-color: #e9906f;
+  border-radius: 3px;
+}
+
+
+.days, .minutes, .hours, .seconds {
+  height: 100px;
+  width: 79px;
+  /* background: #f1f1f1; */
+  border: 2px solid #9debc4d7;
+  display: flex;
+  align-items: center;
+  padding-top: 0px;
+  justify-content: center;
+  border-radius: 3px;
+  color: #f1f1f1;
+  flex-direction: column-reverse;
+  gap: 0px;
+}
+
+@media (max-width: 375px) {
+  .time-container .dept-name {
+    padding: 0px 0px;
+    padding-top: 27px;
+    text-transform: capitalize;
+    color: #f1f1f1;
+    font-size: 10px;
+  }
+
+  .time-container .launch-name {
+    color: #f1f1f1;
+    padding: 9px 6px;
+    font-size: 20px;
+  }
+
+  .time-container .calender-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 425px) and (min-width: 376px) {
+  .time-container .dept-name {
+    padding: 4px 6px;
+    text-transform: capitalize;
+    color: #f1f1f1;
+    font-size: 15px;
+  }
+  .time-container .launch-name {
+    color: #f1f1f1;
+    padding: 0px 6px;
+    font-size: 27px;
+  }
+  .time-container .calender-container {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+  }
+}
+
+/*s2 end*/
 .container{
     /* width: 100%; */
     /* height: 100%; */
@@ -256,161 +402,6 @@ li a.active{
     width: 100px;
     height: 110px;
 }
-.section2 {
-  background: #111;
-  color: #fff;
-}
-.section2 .event-content {
-  position: absolute;
-  transform: translateY(-50px);
-  color: #fff;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.event-box {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.event-content h1 {
-  /* padding: 0% 10%; */
-  font-size: 64px;
-  font-family: 'Oswald', sans-serif;
-  /* font-family: 'Unbounded', cursive; */
-  font-weight: 600;
-  color: #fff;
-  /* font-family: "Times New Roman", Times, serif; */
-}
-.event-content p {
-  font-size: 30px;
-  font-weight: 600;
-  color: #fff;
-  font-family: "Times New Roman", Times, serif;
-  padding: 6% 20%;
-}
-
-.event-content #dept {
-  width: 100%;
-  padding-left: 44px;
-  padding-bottom: 70px;
-  height: 10px;
-  font-family: 'Oswald', sans-serif;
-  font-size: 26px;
-}
-.event-content h1 span {
-  color: #ff3753;
-  font-family: "Lora", serif;
-}
-
-.launch-time {
-  position: absolute;
-  left: 0px;
-  top: 200px;
-  width: 450px;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 20px;
-  margin: 15% 16%;
-}
-.launch-time::before {
-  content: "";
-  position: absolute;
-  width: 90px;
-  height: 640px;
-  background-image: linear-gradient(
-    to right,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet
-  );
-  animation: animate 3s linear infinite;
-}
-.launch-time::after {
-  content: "";
-  position: absolute;
-  background: #000;
-  border-radius: 16px;
-  inset: 4px;
-}
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(350deg);
-  }
-}
-.launch-time .box {
-  display: flex;
-  background: transparent;
-  width: 400px;
-  height: 100px;
-  color: #fff;
-  z-index: 10;
-  border-radius: 20px;
-}
-.launch-time div {
-  color: #fff;
-  flex-basis: 100px;
-}
-.launch-time div #days {
-  position: absolute;
-  left: -42px;
-  top: -10px;
-}
-.launch-time div #hours {
-  position: absolute;
-  left: 65px;
-  top: -10px;
-}
-.launch-time div #minutes {
-  position: absolute;
-  left: 166px;
-  top: -10px;
-}
-.launch-time div #seconds {
-  position: absolute;
-  left: 271px;
-  top: -10px;
-}
-.launch-time div p {
-  font-size: 60px;
-  margin-bottom: -5px;
-}
-.launch-time .box div span {
-  position: relative;
-  top: 80px;
-  left: 55px;
-  font-size: 20px;
-  z-index: 10;
-  color: #fff;
-  font-family: "Times New Roman", Times, serif;
-}
-.launch-time .box div .dis1 {
-  position: absolute;
-}
-.launch-time .box div .dis2 {
-  position: absolute;
-  left: 160px;
-}
-.launch-time .box div .dis3 {
-  position: absolute;
-  left: 260px;
-}
-.launch-time .box div .dis4 {
-  position: absolute;
-  left: 360px;
-}
 /* events css end */
 
 .section3 {
@@ -527,7 +518,7 @@ li a.active{
 .raw-content h1 {
   color: #f8f6f7;
   text-transform: capitalize;
-  font-size: 50px;
+  font-size: 30px;
   padding-top: 18px;
 }
 
@@ -813,7 +804,8 @@ margin-left: -795px;
   .container p {
     margin-bottom: 40px;
     font-weight: 540;
-  }
+    font-size: 24px;
+}
   .input-row {
     display: flex;
     justify-content: space-between;
@@ -1274,5 +1266,14 @@ margin-left: -795px;
   width: 60px;
   height: 62px;
   border-radius: 50%;
+}
+.college-name h2 {
+  background: #ff00009a;
+  color: #fff;
+  font-size: 15px;
+  padding: 1px 2px;
+  margin-left: 26px;
+  border: 1px solid #3b0000;
+  text-transform: capitalize;
 }
 }
