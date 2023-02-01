@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald&family=Poppins:wght@500&family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital@1&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +29,7 @@
   text-transform: capitalize;
   color: #f1f1f1;
   font-size: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 .time-container .dept-name span {
   color: #e9906f;
@@ -67,6 +70,7 @@
   color: #f1f1f1;
   background-color: #e9906f;
   border-radius: 3px;
+  font-family: 'Teko', sans-serif;
 }
 
 .minutes span {
@@ -715,6 +719,7 @@ li a.active{
     padding: 40px 60px;
   }
    h1 {
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 10px;
   }
   .container p {
