@@ -500,15 +500,23 @@ li a.active{
   display: none;
 }
 
-.buttons {
+
+
+.down{
   position: relative;
-  bottom: -160px;
-  left: 70px;
-  display: flex;
-  gap: 20px;
+  background-color: #eb5e28;
+  width: 100px;
+  height: 30px;
+  padding: 5px 15px;
+  color: #f8f6f7;
+  text-transform: capitalize;
+  border-radius: 5px;
+  text-decoration: none;
+  top: 230px;
+  left: 400px;
 }
 
-.buttons a {
+.reg{
   position: relative;
   background-color: #eb5e28;
   width: 100px;
@@ -519,6 +527,8 @@ li a.active{
   text-transform: capitalize;
   border-radius: 5px;
   text-decoration: none;
+  top: 230px;
+  left: 420px;
 }
 
 .buttons a:hover {
@@ -546,202 +556,144 @@ li a.active{
 }
 
 .section4{
-width: 100%;
-height: 100vh;
-}
-.section4-container{
   width: 100%;
   height: 100vh;
-  /* background: #000; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.content-holder {
-  width: 90%;
-  height: 85%;
-  background: #F2CC8F;
-  overflow: hidden;
-  position: relative;
 }
 
-.event-parent{
-  width: 400px;
-  height: 160px;
-  /* padding: 10px; */
-  background: #023e8a;
-  margin: 5px;
-  color: #f8f6f7;
-  border-radius: 5px;
-}
-.parent1{
-  position: absolute;
-  background-color: #111;
-  /* width: 100%; */
-}
-.parent1 h1{
-  position: absolute;
-  margin-left: 200px;
-  margin-top: 60px;
-  font-size: 30px;
-  text-transform: capitalize;
-}
-
-.parent2 {
-  /* width: 89%; */
-  position: absolute;
-  background: #000000;
-  right: 5px;
-  margin-top: 170px;
-}
-
-.parent2 h1{
-  position: absolute;
-  margin-left: 30px;
-  margin-top: 60px;
-  font-size: 30px;
-  text-transform: capitalize;
-}
-
-.parent3{
-  position: absolute;
-  background-color: #111;
-  margin-top: 335px;
-  /* width: 100%; */
-}
-.parent3 h1{
-  position: absolute;
-  margin-left: 200px;
-  margin-top: 60px;
-  font-size: 30px;
-  text-transform: capitalize;
-}
-
-.parent4 {
-  /* width: 100%; */
-  position: absolute;
-  background: #000000;
-  right: 5px;
-  margin-top: 500px;
-}
-
-.parent4 h1{
-  position: absolute;
-  margin-left: 30px;
-  margin-top: 60px;
-  font-size: 30px;
-  text-transform: capitalize;
-}
-
-.debugging{
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 50%;
-  margin: 5px 10px;
-}
-
-.typewritting{
-  width: 140px;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 50%;
-  margin: 5px 250px;
-}
-
-.tech-quiz{
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 50%;
-  margin: 5px 10px;
-}
-
-.build-code{
-  width: 140px;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 50%;
-  margin: 5px 250px;
-}
-
-.tech-name{
-  position: absolute;
-  color: #f8f6f7;
-  /* background: #023e8a; */
-  width: 50px;
-  margin-top: 120px;
-  left: 600px;
-  transform: rotate(-45deg);
-}
-
-.tech-name h1{
+.techevent-container{
+  width: 100%;
+  height: 100vh;
+  background-color: #f1faee;
   display: flex;
   flex-direction: column;
-  text-transform: uppercase;
-  width: 50px;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  gap: 5px;
-  /* transform: rotate(-45deg); */
-  transition: .4s;
-}
-.tech-name h1 span{
-  transform: rotate(45deg);
+  gap: 50px;
 }
 
-.tech-name h1 .tech-color{
-  color: #9b1010;
+.techevent-container .eventname-continer{
+  width: 100%;
+  height: 100px;
+  /* background-color: aquamarine; */
+  margin-top: 55px;
 }
 
-.event-child{
-  width: 0px;
-  height: 160px;
-  background-color: #34374d;
-  margin-top: -162px;
-  margin-left: 395px;
-  transition: .5s;
+.techevent-container .eventname-continer ul{
+  width: 100%;
+  height: 100px;
+  background-color: #a8dadc;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.eventname-continer ul li{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* background-color: blue; */
+  list-style: none;
+}
+
+.eventname-continer ul li .img-tech{
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.event-description{
+  width: 100%;
+  height: 540px;
+  background-color: #457b9d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-description h1{
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.event-description .event1-description{
+  width: 800px;
+  height: 400px;
+  background: #5c6b73;
+  color: #fff;
+  border-radius: 6px;
+  transition: .4s;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  gap: 40px;
+  
+
+}
+
+.event-description .event2-description{
+  width: 800px;
+  height: 400px;
+  background: #354f52;
+  color: #fff;
+  border-radius: 6px;
+  transition: .4s;
+  scale: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+.event-description .event3-description{
+  width: 800px;
+  height: 400px;
+  background: #bd9778;
+  color: #fff;
+  border-radius: 6px;
+  transition: .4s;
+  scale: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+.event-description .event4-description{
+  width: 800px;
+  height: 400px;
+  background: #a5a58d;
+  color: #fff;
+  border-radius: 6px;
+  transition: .4s;
+  scale: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+.button-tech a{
+  background: #2a9d8f;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 10px;
   border-radius: 5px;
+  text-decoration: none;
+  text-transform: capitalize;
 }
-
-.event-parent:hover .event-child{
-width: 800px;
-}
-
-.parent2:hover .child2{
-/* background-color: #222; */
-margin-left: -795px;
-}
-
-.parent4:hover .child4{
-  /* background-color: #222; */
-  margin-left: -795px;
-  }
-
-.child2, .child4{
-  /* transform: rotate(180deg); */
-  margin-top: -154px;
-  /* margin-left: -795px; */
-}
-
-
-.content-holder:hover .h1{
-  scale: 0;
-}
-
-.event-child .child-content{
-  width: 700px;
-  height: 140px;
-  margin-top: 50px;
-  scale: 0;
-  transition: .6s;
-}
-.event-parent:hover .child-content{
-  scale: 1;
-}
-/* tech-css  */
+/* tech css end */
 /* contact css starts */
 .section5{
     background-color: #c0c0c0;
